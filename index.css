@@ -62,7 +62,7 @@ ul.info {
    padding-left: 200px;
 }
 
-a, a:active, a:visited {
+a:link, a:active {
     font-family: monospace;     
     color: blue;
     text-decoration: none;
@@ -72,14 +72,14 @@ a:hover {
     color: maroon;
 }
 
+ul li {
+    padding-top: 1px;
+}
+
 ul.info li {
     display: block;
     float: left;
     margin-right: 25px;
-}
-
-ul li {
-    padding-top: 1px;
 }
 
 ul.info li.user {
@@ -101,8 +101,11 @@ ul.info li.email {
 }
 
 div.content {
+    display: block;
+    position: relative;
     clear: both;
     padding: 15px;
+    z-index: 100;
 }
 
 div.footer {
