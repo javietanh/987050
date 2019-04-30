@@ -1,0 +1,71 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 29, 2019, 1:50:48 PM
+    Author     : vieta
+*/
+body{
+    background: url(images/silverware.jpg) repeat;
+    background-color: white;
+    color: #404040;
+    font-size: 11pt;
+    max-width: 1024px;
+    font-family: Georgia, Garamond;
+}
+
+h1 {
+    color: #A4A400;    
+    font-family: Lucida Sans Unicode, Helvetica, Arial, or any sans-serif;
+    text-align: left;
+    font-size: 18pt;
+    font-weight: normal;
+    text-decoration: underline;
+    letter-spacing: 0.25em;
+}
+h1 span {
+    background-color: #F0F0F0;
+}
+
+#main {
+    color: #A4A400;
+    font-family: Lucida Sans Unicode, Helvetica, Arial, or any sans-serif;
+    text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: 0.25em;
+}
+#main span {
+    background-color: #F0F0F0;
+}
+
+a {
+    color: #A4A400;
+}
+abbr {
+    text-decoration: underline;
+}
+blockquote p {
+    font-style: italic;
+    background-color: #FFFFA8;
+}
+
+div.copyright{
+    clear: both;
+    text-align: right;
+}
+div.copyright pre{
+    text-align: right;
+    font-family: monospace;
+}
+ul{
+    list-style-image: url(images/pie_icon.gif);
+}
+div.w3c {
+    display: block;
+    text-align: right;
+}
+
