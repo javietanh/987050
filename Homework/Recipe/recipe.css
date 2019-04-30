@@ -18,7 +18,7 @@ body{
 
 h1 {
     color: #A4A400;    
-    font-family: Lucida Sans Unicode, Helvetica, Arial, or any sans-serif;
+    font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
     text-align: left;
     font-size: 18pt;
     font-weight: normal;
@@ -31,7 +31,7 @@ h1 span {
 
 #main {
     color: #A4A400;
-    font-family: Lucida Sans Unicode, Helvetica, Arial, or any sans-serif;
+    font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
     text-align: center;
     font-size: 22pt;
     font-weight: bold;
