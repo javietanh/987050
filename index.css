@@ -7,19 +7,24 @@ and open the template in the editor.
     Created on : Apr 29, 2019, 10:09:09 PM
     Author     : vieta
 */
-body{
+body {
     font-family: monospace;
     font-size: 11pt;
-    margin: 0 auto;
-    padding: 0;
+    margin: 0;
+    padding: 0;    
+}
+
+.wrapper {
+    margin: auto;
     width: 1024px;
 }
 
 div.header {
     display: block;
     position: absolute;
-    background: url(mum-bg.jpg) 0 0 no-repeat;
-    width: 100%;
+    background: url(mum-bg.jpg);
+    background-repeat: no-repeat;
+    width: 1024px;
     height: 100%;
     top: -100px;
 }
@@ -112,4 +117,5 @@ div.content {
 div.footer {
     clear: both;
     padding: 10px;
+    z-index: 100;
 }
