@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(images/background.png) repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8pt;
+}
+
+#bannerbg {
+    background: url(images/bannerbg.png) top left repeat-x;
+    height: 50px;
+}
+#banner {
+    background-image: url(images/banner.png);
+    background-repeat: no-repeat; 
+    margin: auto;
+    width: 795px;
+    height: 50px;
+}
+#header {
+    margin: 35px;
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+    text-transform: uppercase;
+}
+
+#content {
+    clear: both;
+}
+
+#wrapper {
+    width: 800px;
+    height: 100%;
+    margin: auto;
+    border: solid 4px gray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.col1 {
+    width: 49%;
+    float: left;
+}
+
+.col2 {
+    width: 49%;
+    float: right;
+}
+
+.reviews {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin: 1%;
+    padding: 1%;
+}
+
+.box {
+    font-weight: bold;
+    font-size: 8pt;
+    background-color: #E8DC9B;
+    border: solid 2px gray;
+    border-radius: 10px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.box img {
+    float: left;
+    padding-right: 5px;
+}
+
+.reviewer {
+    margin-top: 10pt;
+    margin-bottom: 30pt;
+}
+
+.reviewer img {
+    float: left;
+    padding-right: 5px;
+}
+
+.reviewer .publication {
+    font-style: italic;
+}
+
+.main {
+    width: 550px;    
+}
+
+.heading-bg {
+    background: url(images/rbg.png) repeat;
+    height: 83px;
+}
+
+.heading-icon {
+    background: url(images/rottenbig.png) top left no-repeat;
+    height: 83px;
+    width: 98px;
+    float: left;
+}
+
+.heading-bg span {
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+}
+
+.aside {
+    background-color: #A2B964;
+    width: 250px;
+    float: right;
+}
+.bottom {
+    float: left;
+    width: 100%;
+    background-color: #A2B964;
+    text-align: center;
+    padding: 5px;
+}
+
+.validators {
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+}
+
+.validators img {
+    border-style: none;
+    width: 88px;
+    height: 31px;
+    opacity: 0.5;
+}
+
+.picture {
+    background: url(images/overview.png) no-repeat;
+    width: 250px;
+    height: 412px;
+}
+.clear {
+    clear: both;
+}
+
+.info {
+    margin: 10pt;
+}
+
+dl {
+    font-family: arial, sans-serif;
+    font-size: 8pt;
+}
+
+dt {
+    font-weight: bolder;
+    font-size: 10pt;
+    margin-top: 10pt;
+}
+
+dd {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+ul.links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
