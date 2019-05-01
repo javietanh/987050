@@ -12,6 +12,7 @@ body{
     font-size: 11pt;
     margin: 0 auto;
     padding: 0;
+    width: 1024px;
 }
 
 div.header {
