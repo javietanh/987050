@@ -83,6 +83,12 @@ dd {
     padding-top: 25px;
 }
 
+#footer img {
+    border-style: none;
+    width: 88px;
+    height: 31px;
+}
+
 div.moods {
     display: block;
     float: left;
