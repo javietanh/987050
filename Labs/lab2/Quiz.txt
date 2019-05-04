@@ -1,0 +1,33 @@
+Introduction to Servlets Quiz
+
+1. What is the difference between a web server and a web container?
+- in java web container is used to manage the components like servlets, jsp and it's the part of web server while web server or HTTP server is a server 
+which is capable of handling HTTP requests sent by client and response back with HTTP response.
+
+2. What is a servlet?
+- java servlets server side java program modules that process and answer client requests and implement the servlet interface.
+
+3. How do web servers and web containers interact with servlets?
+- Web server received HTTP request from client then delegates the request to the servlet container, depending upon the configuration of the servlet, the container invokes the appropriate servlet class, servlet process the request and return result to web container, web container return result to web server and finally web server return result to client. 
+
+4. Who creates request objects?
+- Container create request object 
+
+5. What are the states in the servlet lifecycle?
+- Load
+- Instantiate
+- Init
+- Service
+- Detroy
+
+6. Who calls init and when?
+- Container call init and after servlet create new instance.
+
+7. Which of init, service, and doGet should you override?
+- doGet()
+
+8. In what sense are servlets multi-threaded?
+-  If servlets wont be mulithreaded then for each new request a new servlet instance will be created. Which means every time the loading, initialization process will take place. Which will take lot of time. Means performance issue. But if we will handle each request in threads then the the same process wont repeat. So performance will be better.
+
+9. What are the implications of this for servlet instance variables? 
+- By default servlets are not thread safe, the container does not create new instance of the servlet class for each request. It reuses an existing one that's why they are not thread-safe.
