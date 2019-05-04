@@ -1,0 +1,41 @@
+State Management Quiz
+
+1. Can post requests be bookmarked? What are the problems?
+- No, because bookmark only consists of the URL and in post request all URL is the same, only form parameters is difference.
+
+2.What is the purpose of request dispatching?
+- passes all the request and response to another resource on the same server, URL in client browser address bar will remain unchanged.
+
+3. What is the difference between redirect and request dispatch?
+- request dispatch passes all request and response to another resource on same server without changing client browser address bar. on request redirect none of request and response object be sent and client browser address bar will be changed, client sends a new request to the new URL.
+
+4.What is an attribute?
+- It's a name, value pair object on server side bound into one of the three objects: request, session, context 
+
+5.What is the difference between attributes and parameters?
+- parameters come from client request, attributes is server side usage only
+
+6.What are dangers of using attributes?
+
+7. What does it mean to say that http is stateless? Give an example of a stateful protocol.
+- because after process the client request, the server and client is completely disconnect. Each type client request for the resource the web server will process as new client. In desktop application the connection between client and server will be kept until the end of the working session.
+
+8.Give 5 different methods for maintaining state information (count each attribute scope as one method).
+- request scope
+- session scope
+- application scope
+- cookies save on client browser
+- hidden fields on form.
+
+9.How long does a session last?
+- by default the session will setting at 30 minutes last but we can freely change to any amount of time we want.
+
+10.What is a cookie, and how long does a cookie last?
+- cookie is the client storage object set by the response of web server. cookie living depend on the age set by the web server.
+
+11. What is the purpose of URL rewriting?
+- URL rewriting provide the ability for session tracking alternative in case the client browser does not support cookies.
+
+12. Why does the request attribute report ‘null’ for the maintaining state demo?
+- because it's the request attribute and it live only on the request life time. the state was not maintain after the request end.
+
