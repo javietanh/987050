@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Simple Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form method="post" action="/Servlets/Calculator">
+                <fieldset>
+                    <legend>Calculator</legend>
+                    <p>
+                        <input type="text" name="tbNum1" size="5"/> + <input type="text" name="tbNum2" size="5"/> = <input type="text" name="tbResult1" size="5"/>
+                    </p>
+                    <p>
+                        <input type="text" name="tbNum3" size="5"/> * <input type="text" name="tbNum4" size="5"/> = <input type="text" name="tbResult2" size="5"/>
+                    </p>
+                    <p>
+                        <input type="submit" value="Submit"/>
+                    </p>                
+                </fieldset>                
+            </form>
+        </div>
+    </body>
+</html>
