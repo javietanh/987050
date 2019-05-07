@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 6, 2019, 2:41:09 PM
+    Author     : vieta
+*/
+
+.error {
+    color: red;
+}
+
+fieldset {
+    position: relative;
+    float: left;
+    border: solid 1px #42aeff;
+    min-width: 400px;
+}
+
+.age {
+    display: block;
+    position: relative;
+    float: right;
+}
+.try {
+    color: green;
+}
+.button {
+    font-family: monospace;
+    font-size: 11pt;
+    color: #42aeff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 25px;
+    padding-right: 25px;    
+}

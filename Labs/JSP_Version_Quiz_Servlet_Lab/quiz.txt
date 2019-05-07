@@ -1,0 +1,47 @@
+JSP Introduction Quiz
+
+1. What is the main value of Java Server Pages?
+- separate display from processing like separate html from java code, support dynamic content.
+
+2. How are JSP pages related to servlets?
+- JSP pages are actually compiled into java servlet, automatically translation by the web container when the request call to that JSP page.
+
+3. How are JSP pages related to HTML?
+- JSP pages contain all the static HTML tags
+
+4. Give an example of a JSP scriptlet and show how it will look in the JSP servlet . 
+- example:     
+    scriptlet <% count++ %> and in servlet: count++;
+
+5. Give an example of a JSP declaration and show how it will look in the JSP servlet
+- example: 
+    JSP: <%! int count=0; %> -> servlet: int count = 0;    
+
+6. Give an example of a JSP comment and show how it will look in the JSP servlet.
+- example: 
+    JSP: <%-- comment --%> Servlet: <!-- comment -->
+
+7. Give an example of a JSP expression and show how it will look in the JSP servlet. 
+- example:
+    JSP: <%= ++count %> -> Servlet: out.print(++count);
+
+8. Give an example of a JSP directive and show how it will look in the JSP servlet. 
+- example:
+    JSP: <%@ page import="java.util.%" %> -> Servlet: import java.util.*;
+
+9. Explain how an EL expression is evaluated.
+- check page scope for attribute called if found then use it else
+- check request scope for attribute called if found then use it else
+- check session scope for attribute called if found then use it else
+- check application scope for attribute called if found then use it otherwise ignore the expression.
+
+10. Explain how servlet attributes are involved in EL expressions.
+- first find the attribute in page, request, session, application scopes until attribute is found then:
+- if first attribute is a bean then second attribute is a property of the bean
+- if first attribute is a map then second attribute is a key of the map
+- if first attribute is a list then second is an index of the list.
+
+11. Explain how servlets and JSPs use request dispatch to interact.
+- servlet using request dispatch to forward the current request to the JSP page, all the data storage on the current request also dispatch to the JSP page.
+- JSP also call servlet to the doPost & doGet service.
+
