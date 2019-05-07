@@ -8,7 +8,8 @@ JSP Custom Tags Quiz
 -  it's the custom of JSTL, using as same as JSTL but the developer have to develop the custom handler class, tag descriptor...
 
 3. What is the role of the URI in the TLD and the taglib directive?
-- in TLD file it's a path to deploy the tld file on web server, in taglib directive it's the path let taglib know where to find its definition of the custom tag.
+- in TLD file the URI tag is the uniquely identified the tag library.
+- in taglib directive URI resolves the location the container understand the tag.
 
 4. What is a tag handler class?
 - is the java class extends the tag support framework class "java.servlet.jsp.tagext.TagSupport"
