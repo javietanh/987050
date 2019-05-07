@@ -1,0 +1,26 @@
+JSP Custom Tags Quiz
+============================================================
+
+1. Rewrite the JSP page in the first demo (forEach) to use scripting instead of the JSTL forEach.
+- 
+
+2. How do custom tags relate to JSTL?
+-  it's the custom of JSTL, using as same as JSTL but the developer have to develop the custom handler class, tag descriptor...
+
+3. What is the role of the URI in the TLD and the taglib directive?
+- in TLD file it's a path to deploy the tld file on web server, in taglib directive it's the path let taglib know where to find its definition of the custom tag.
+
+4. What is a tag handler class?
+- is the java class extends the tag support framework class "java.servlet.jsp.tagext.TagSupport"
+
+5. What is the role of attribute setters in a tag handler class?
+- thought setters, it's provide all the data need for doTag() method.
+
+6. What is the role of the doTag() method in a tag handler class?
+- receive input variable from the setters method and render custom HTML tag to the output.
+
+7. What is the operation getJspContext().getOut().write("hello") do when called in a doTag() method?
+- write the word hello in the place custom tag was used.
+
+8. What does the operation getJspBody().invoke(null) do when called in doTag() method? 
+- output result from execution of the tag body's JSP content.
