@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 13, 2019, 1:46:57 PM
+    Author     : vieta
+*/
+body{
+    background-color: #CCCCFF;
+    font-family: sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+header {
+    font-size: 32pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+section {
+   text-align: center; 
+   margin: 0 auto;
+   width: 100%;
+}
+footer{
+    margin-top: 15px;
+    text-align: right;
+}
+footer img{
+    background-color: transparent;
+    width: 88px;
+    height: 31px;
+    border-style: none;
+}
+
+#tbContent{
+    text-align: center;
+    width: 90%;
+    height: 400px;
+    font-size:12pt;
+    font-family: monospace;
+}
+
+fieldset {
+    border: solid 5px black;
+    display: inline-block;
+}
+fieldset legend {
+    position: relative;
+    top: 0px;
+}
