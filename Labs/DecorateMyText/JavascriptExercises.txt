@@ -1,0 +1,35 @@
+Javascript Exercises
+===============================================================================
+
+1.  What is the difference between the following 2 statements?
+setTimeout(booyah, 2000);
+setTimeout(booyah(), 2000);
+
+- first statement executed booyah function defined somewhere else after 2 seconds.
+- second statement executed booyah function with null result return after 2 seconds.
+
+2. What do the following 2 alerts display (answer without running the code)?
+var myfunc = function(a, x) {
+    return a * x;
+};
+var x = myfunc(2, 3);
+var y = myfunc;
+alert(x);
+alert(y(2,3));
+
+- 2 alerts display same number 6. 
+
+3.  Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that says “BOOYAH!”
+setTimeout(booyah1, 2000);
+setTimeout(booyah2(), 2000);
+
+function booyah1(){
+    alert("BOOYAH!");
+}
+
+setTimeout(booyah2(){
+    alert("BOOYAH!");
+}, 2000);
+
+4.  What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons for using it)?
+- Unobtrusive java script is the way to make out HTML following the separate of consent guidance. In that HTML is for the content, CSS for styling and java script is for handling behavior. It's easier to maintain and update
