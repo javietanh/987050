@@ -1,0 +1,63 @@
+Javascript Scope Exercises
+====================================================
+1. print out as following:
+- 10 
+- 8
+- 8
+- 9
+- 10
+- 1
+
+2. What is the difference between a method and function?
+- function is a piece of code that is called by name.
+- method is the function inside an object.
+
+3. What does 'this' refer to when used in a Java method?
+- this refer to the current object in java method.
+
+4. What does 'this' refer to when used in a JavaScript method?
+- refer to nearest object (owner object)
+
+5. What does 'this' refer to when used in a JavaScript constructor function?
+- this will refer to itself (the object will create and return)
+
+6. Assume object x is the prototype for object y in JavaScript. Object x has a method f( ) containing keyword 'this'. When f is called by x.f( ), what does 'this' refer to?
+- this referred to x
+
+7. What is a free variable in JavaScript?
+- free variables are the locally declared or passed as parameter.
+
+8. Create an object that has properties with name = "fred" and major="music" and a property that is a function that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal.
+
+let obj = {
+    name: 'fred',
+    major: 'music',
+    func: function(num1, num2){
+        return (num1 === num2)? Math.sqrt(num1) : (num1 > num2)? num1 : num2;
+    }
+};
+
+9. Write JavaScript code for creating three Employee objects using the "new" keyword and a constructor function. Employee objects have the following fields:  name, salary, position.
+function Employee(name, salary, position){
+  this.name = name;
+  this.salary = salary;
+  this.position = position;
+}
+
+let john = new Employee('John', 30000, 'IT');
+let ana = new Employee('Ana', 50000, 'Accountant');
+let sue = new Employee('Sue', 70000, 'Director');
+
+console.log(john, ana, sue)
+
+10. Write a JavaScript function that takes any number of input arguments and returns the product of the arguments.
+function product(){
+  let total = 1;
+  for(let i = 0; i < arguments.length; i++) { 
+    total = total * arguments[i];
+  }
+  return total;
+}
+
+11. Write an arrow function that returns the maximum of its three input arguments.
+- let findMax = (arg1, arg2, arg3) => Math.max(arg1, arg2, arg3);
